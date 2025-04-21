@@ -56,3 +56,42 @@ body {
     margin-left: 60px;   
 }
   
+    /* Hero & welcome section*/
+  
+.hero,
+.welcome {
+    max-width: 100%;
+    padding: 55px;
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+    
+.hero-img,
+.welcome-img {
+    height: 400px;  
+}
+    
+.hero-text,
+.welcome-text {
+    max-width: 500px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.hero-text h1,
+.welcome-text h1 {
+    color:rgb(75, 75, 75);
+    font-size: 32px;
+    font-weight: 700px;
+    font-family: din-round, sans-serif;
+}
+    
+a {
+    text-decoration: none;
+}
+    
