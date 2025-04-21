@@ -17,3 +17,8 @@ document.getElementById("form").addEventListener("submit", function (e) {
         email: emailInput,
         password: passwordInput
     });
+
+    // Save the updated users array back to localStorage
+    localStorage.setItem("users", JSON.stringify(users));
+
+ 
