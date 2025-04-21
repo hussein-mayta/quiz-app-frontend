@@ -1,0 +1,12 @@
+.quiz-list {
+
+    margin: 50px 10px;
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+  
+
+  
