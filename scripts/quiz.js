@@ -29,4 +29,18 @@ function getQuizKeyFromURL() {
       `;
       questionsContainer.innerHTML += questionHTML;
     });
- 
+  
+    document.getElementById("submitQuiz").addEventListener("click", () => {
+      let score = 0;
+    
+      quizData.questions.forEach((q, index) => {
+        const selected = document.querySelector(`input[name="q${index}"]:checked`);
+        if (selected && selected.value === q.correctAnswer) {
+          score++;
+        }
+      });
+    
+      // Show the score on screen
+      scoreResult.innerHTML = `🎉 You scored <strong>${score}</strong> out of <strong>${quizData.questions.length}</strong>!`;
+    
+  
