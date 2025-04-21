@@ -10,3 +10,10 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
     // Get existing users from localStorage
     const users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Add the new user to the users array
+    users.push({
+        name: nameInput,
+        email: emailInput,
+        password: passwordInput
+    });
