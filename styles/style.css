@@ -95,3 +95,31 @@ a {
     text-decoration: none;
 }
     
+.register,
+.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(72, 155, 239, 0.849);
+    color: #ffffff;
+    font-weight: bolder;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow:0px 3px darkgreen;
+}
+    
+    
+      
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff;
+    color: rgb(28, 176, 246);
+    font-weight: bolder;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow:1px 1px 4px 1px lightgray;
+}
+  
+  
