@@ -21,4 +21,12 @@ document.getElementById("form").addEventListener("submit", function (e) {
     // Save the updated users array back to localStorage
     localStorage.setItem("users", JSON.stringify(users));
 
- 
+    // Show success message and redirect to login after a short delay
+    message.textContent = "Registration successful! Redirecting to login...";
+    message.style.color = "green";
+
+    // Redirect after 1.5 seconds to the login page
+    setTimeout(() => {
+        window.location.href = "../pages/login.html"; 
+    }, 1500);
+});
