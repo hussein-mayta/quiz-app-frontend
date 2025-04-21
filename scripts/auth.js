@@ -7,3 +7,8 @@ document.getElementById("form").addEventListener("submit", function (e) {
     const password = document.getElementById("password").value.trim();
     const message = document.getElementById("message");
 
+    if (!name || !email || !password) {
+        message.textContent = "Fill all fields";
+        message.style.color = "red";
+        return;
+    }
