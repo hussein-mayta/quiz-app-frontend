@@ -1,0 +1,42 @@
+/* Dashboard style  */
+
+.dashboard-section h2{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #F59E0B;
+}
+  
+  
+.dashboard-section {
+    padding: 20px;
+    padding-top: 150px;
+    max-width: 900px;
+    margin: auto;
+}
+    
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(72, 155, 239, 0.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    
+.results-table th,
+.results-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+}
+    
+.results-table th {
+    background-color: rgba(72, 155, 239, 0.849);
+    color: white;
+}
+  
+.results-table td{
+    background: linear-gradient(115deg, rgba(72, 155, 239, 0.08), rgba(240, 109, 33, 0.18));
+}
+    
+
+    
