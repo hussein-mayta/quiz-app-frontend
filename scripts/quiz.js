@@ -43,4 +43,24 @@ function getQuizKeyFromURL() {
       // Show the score on screen
       scoreResult.innerHTML = `🎉 You scored <strong>${score}</strong> out of <strong>${quizData.questions.length}</strong>!`;
     
+      // Save quiz result to localStorage for the current user
+      const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+      const timestamp = new Date().toLocaleString();
+      const result = {
+        name: currentUser.name,
+        email: currentUser.email,
+        quizTitle: quizData.title,
+        score,
+        total: quizData.questions.length,
+        date: new Date().toISOString().split('T')[0],
+      };
+  
+      const allResults = JSON.parse(localStorage.getItem("quizResults")) || [];
+      allResults.push(result);
+      localStorage.setItem("quizResults", JSON.stringify(allResults));
+  
+      
+    });
+    
+  }
   
