@@ -7,3 +7,6 @@ document.getElementById("form").addEventListener("submit", function (e) {
 
     const message = document.getElementById("message");
 
+
+    // Get existing users from localStorage
+    const users = JSON.parse(localStorage.getItem("users")) || [];
