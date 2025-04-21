@@ -31,4 +31,9 @@ const defaultQuizzes = [
     }
   ];
   
+  // Save quiz 
+if (!localStorage.getItem('quizzes')) {
+    localStorage.setItem('quizzes', JSON.stringify(defaultQuizzes));
+}
+  
  
