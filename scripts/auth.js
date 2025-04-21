@@ -12,3 +12,9 @@ document.getElementById("form").addEventListener("submit", function (e) {
         message.style.color = "red";
         return;
     }
+
+     //  Admin Check
+     if (name === "Hussein" && email === "hussein@admin.com" && password === "admin123") {
+        window.location.href = "../pages/dashboard.html";
+        return;
+    }
