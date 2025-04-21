@@ -1,0 +1,58 @@
+/* Quiz style  */
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;  
+    max-width: 800px;
+    margin: 0 auto;
+}
+    
+.question-card {
+    background: linear-gradient(115deg, rgba(72, 155, 239, 0.08), rgba(240, 109, 33, 0.18));
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+    
+.question-card h3 {
+    color: #F59E0B;
+    margin-bottom: 10px;
+}
+    
+.options label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
+.submit-container {
+    text-align: center;
+    padding-bottom: 70px;
+}
+    
+.score-result {
+    margin: 30px auto;
+    padding: 20px 25px;
+    max-width: 420px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    text-align: center;  
+}
+  
+.submit-btn {
+    padding: 10px 25px;
+    background-color: #1E40AF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+  
+   
+    
