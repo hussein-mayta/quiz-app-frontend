@@ -31,6 +31,10 @@ const worldCupQuiz = {
 };
 
 
+if (!localStorage.getItem("quiz_worldcup")) {
+    localStorage.setItem("quiz_worldcup", JSON.stringify(worldCupQuiz));
+}
+
 
 const generalInfoQuiz = {
     title: "General Information Quiz",
@@ -63,6 +67,10 @@ const generalInfoQuiz = {
     ]
 };
 
+
+if (!localStorage.getItem("quiz_generalInfo")) {
+    localStorage.setItem("quiz_generalInfo", JSON.stringify(generalInfoQuiz));
+}
 
 
 
@@ -99,10 +107,14 @@ const geographyQuiz = {
   };
   
 
+if (!localStorage.getItem("quiz_geography")) {
+    localStorage.setItem("quiz_geography", JSON.stringify(geographyQuiz));
+}
+  
 
 
   // English Language Quiz Data
-const englishLanguageQuiz = {
+  const englishLanguageQuiz = {
     title: "English Language Quiz",
     questions: [
       {
@@ -132,4 +144,9 @@ const englishLanguageQuiz = {
       }
     ]
   };
+  
+
+if (!localStorage.getItem("quiz_englishLanguage")) {
+    localStorage.setItem("quiz_englishLanguage", JSON.stringify(englishLanguageQuiz));
+}
   
