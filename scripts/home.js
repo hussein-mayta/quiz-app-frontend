@@ -36,4 +36,24 @@ if (!localStorage.getItem('quizzes')) {
     localStorage.setItem('quizzes', JSON.stringify(defaultQuizzes));
 }
   
- 
+document.addEventListener("DOMContentLoaded", () => {
+    const quizzes = JSON.parse(localStorage.getItem('quizzes')) || [];
+    const quizList = document.getElementById('quiz-list');
+  
+    quizzes.forEach(quiz => {
+      const card = document.createElement('div');
+      card.className = 'quiz-card';
+  
+      card.innerHTML = `
+        <img src="${quiz.image}" alt="${quiz.title}" class="quiz-image" />
+        <div class="quiz-info">
+          <h3>${quiz.title}</h3>
+          <p>${quiz.description}</p>
+          <a href="${quiz.url}?quiz=${quiz.key}" class="start-btn">Start Quiz</a>
+        </div>
+      `;
+  
+      quizList.appendChild(card);
+    });
+});
+  
