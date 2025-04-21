@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - QUIZZORA</title>
+    <link rel="stylesheet" href="../styles/style.css"> 
+    <link rel="stylesheet" href="../styles/auth.css">
+</head>
+<body>
+    
+    <header class="header">
+        <section class="nav">
+            <a href="../index.html"><img class="logo" src="../assets/images/logo.png" alt="logo img"></a>
+            <h1>QUIZZORA</h1>
+        </section>
+    </header>
+
+    <main>
+        <section class="form-sec">
+            <form id="form" class="form">
+                <h2>LOGIN</h2>
+
+                <div class="form-group">
+                <img src="../assets/images/user-img.png" alt="user icon">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                <img src="../assets/images/email-img.png" alt="email icon">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                <img src="../assets/images/pass-img.png" alt="pass icon">
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn" id="btn">LOGIN</button>
+                <p id="message" class="error-message"> </p>
+            
+            </form>
+
+            
+            
+            
+        </section>
+    </main>
+    
+
+    <script src="../scripts/auth.js"></script>
+</body>
+</html>
