@@ -1,0 +1,83 @@
+/* Registration & login form style */
+
+.form-sec{
+    max-width: 100%;
+    padding: 55px;
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    
+    
+    
+  }
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:10px;
+    width: 600px;
+    height: 400px;
+    background-color: rgba(72, 155, 239, 0.849);
+    border: 2px solid rgba(72, 155, 239, 0.849);
+    border-radius: 3%;
+    padding: 40px;
+    box-shadow:1px 1px 4px 1px darkcyan;
+}
+
+.form img {
+    padding: 10px;
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.form h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #F59E0B;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    
+}
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.form-group label {
+    width: 90px;
+}
+  
+.form-group input {
+    flex: 0.5;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color:#F59E0B ;
+    border-radius: 10px;
+    border-color: #F59E0B;
+    box-shadow:1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    font-weight: 680; 
+    font-size: 14px;  
+    font-family: 'Poppins', sans-serif; 
+    color: rgba(72, 155, 239, 0.849);
+}
+  
+
